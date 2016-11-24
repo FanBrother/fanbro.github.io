@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javaScript">
+var AAAAA;
+function Dim1()
+{
+AAAAA=window.top.moveBy;
+Test();
+}
+function Test() 
+{
+    if (AAAAA) 
+   {
+    alert("看到这段文字说明返回的是true值"+"\n"+"变量="+AAAAA);
+    location.reload();
+    }
+   else
+   {
+   alert("看到这段文字说明返回的是false值"+"\n"+"变量="+AAAAA);
+   }
+}
+</script>
+</head>
+<body>
+<input type="button" value="不给变量赋值" onclick="Test();">
+<input type="button" value="给变量赋值" onclick="Dim1()">
+</body>
+</html-->

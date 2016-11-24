@@ -1,0 +1,70 @@
+
+/*---------------------------------*\
+   给图标设置骚气的样式
+\*---------------------------------*/
+    /*用我准备的字体*/
+    @font-face {
+        font-family: "fontello";
+        src: url("font/fontello.eot");
+        src: url("font/fontello.eot#iefix") format("embedded-opentype"), url("font/fontello.woff") format("woff"), url("font/fontello.ttf") format("truetype"), url("font/fontello.svg#fontello") format("svg");
+        font-weight: normal;
+        font-style: normal; }
+
+    .fontello, .post__toc-li:before {
+        font-family: "fontello";
+        speak: none;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+/*---------------------------------*\
+   Post
+\*---------------------------------*/
+    #post__share {
+        height: 21px;
+        margin-top: 2.5em;
+        margin-bottom: 19px;
+        border-bottom: 2px solid rgba(229, 232, 236, 0.5);
+        position: relative; }
+    #post__share > .fontello, #post__share > .post__toc-li:before {
+        display: block;
+        width: 40px;
+        height: 40px;
+        color: #7d8b99;
+        font-size: 20px;
+        text-align: center;
+        line-height: 36px;
+        background: white;
+        border: 2px solid rgba(229, 232, 236, 0.5);
+        box-shadow: 0 0 7px 7px transparent;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        -webkit-transition: color .35s, box-shadow .35s;
+        -moz-transition: color .35s, box-shadow .35s;
+        -ms-transition: color .35s, box-shadow .35s;
+        -o-transition: color .35s, box-shadow .35s;
+        transition: color .35s, box-shadow .35s; }
+    #post__share > .fontello:hover, #post__share > .post__toc-li:hover:before {
+      box-shadow: 0 0 0 2px rgba(125, 139, 153, 0.15); }
+
+    #icon-twitter {
+        margin-left: -90px; }
+    #icon-twitter:hover {
+        color: #4099ff; }
+    #icon-twitter:before {
+        content: "\e805"; }
+
+    #icon-cc {
+        margin-left: -20px; }
+    #icon-cc:hover {
+        color: #f8ce5e; }
+    #icon-cc:before {
+        content: "\e803"; }
+
+    #icon-weibo {
+        margin-left: 50px; }
+    #icon-weibo:hover {
+        color: #d40220; }
+    #icon-weibo:before {
+        content: "\e804"; }

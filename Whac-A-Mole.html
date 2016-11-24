@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>爱打谁打谁</title>
+		<link href="table.css" rel="stylesheet" type="text/css" />
+		<link href="share.css" rel="stylesheet" type="text/css" />	
+		<script type="text/javascript" src="jquery-3.1.1.js"></script>		
+	</head>
+	<body>
+	<div>	
+		<a href="javascript:void(0);" class="icon icon_setskin"></a>	
+	</div>
+    <!--最大的框架-->
+		<div id="mainFrame">
+		<!--顶部消息区-->
+			<div id="top">
+				<input type="button" value="开始游戏" onclick="GameStart()">
+				<input type="button" value="结束游戏" onclick="GameOver()"> 
+				<form name="form1">
+					<label>分数：</label>
+					<input type="text" name="score" size="5">
+					<label>命中率：</label>
+					<input type="text" name="success" size="10">
+					<label>倒计时：</label>
+					<input type="text" name="remtime" size="5">
+				</form>
+			</div><!-- end 顶部显示区-->
+		<!--左边游戏区-->
+			<div id="left">
+			<!--主游戏区域-->
+				<div id="mainGameArea" >
+				<div id="tr0" class="tr float">
+					<div id="td[0]" onclick="hit(0)" ></div>
+					<div id="td[1]" onclick="hit(1)" ></div>
+					<div id="td[2]" onclick="hit(2)" ></div>
+					<div id="td[3]" onclick="hit(3)" ></div>			
+				</div>
+				<div id="tr1" class="tr ">
+					<div id="td[4]" onclick="hit(4)" ></div>
+					<div id="td[5]" onclick="hit(5)" ></div>
+					<div id="td[6]" onclick="hit(6)" ></div>
+					<div id="td[7]" onclick="hit(7)" ></div>					
+				</div>
+				<div id="tr2" class="tr">
+					<div id="td[8]" onclick="hit(8)" ></div>
+					<div id="td[9]" onclick="hit(9)" ></div>
+					<div id="td[10]" onclick="hit(10)" ></div>
+					<div id="td[11]" onclick="hit(11)" ></div>	
+				</div>
+				<div id="tr3" class="tr">
+					<div id="td[12]" onclick="hit(12)" ></div>
+					<div id="td[13]" onclick="hit(13)" ></div>
+					<div id="td[14]" onclick="hit(14)" ></div>
+					<div id="td[15]" onclick="hit(15)" ></div>
+				</div>
+				</div><!-- end 主游戏区域 -->
+			</div><!-- end 左边游戏区 -->	
+		<!--右边消息区-->
+			<div id="right">
+			
+				<!--<span class="bshare-custom">
+		   			<a title="分享到QQ空间" class="bshare-qzone"></a>
+		    		<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+		    		<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+		    		<span class="BSHARE_COUNT bshare-share-count">0</span>
+		    	</span></br>-->
+		    	<!--图片地址输入框,最大长度50，不限字符类型-->
+		    		`<span>URL:</span>
+	    			<span id="textInputSpan">
+            			<input id="textInput" maxlength="50" type="text" width="150" />
+            			<button onclick="changeText()">GO!</button>
+         			</span><!-- end #textInputSpan -->
+			</div><!-- end #right -->
+		</div>
+
+		<!--分享按键区域-->
+		<div id="post__share">
+			<a id="icon-twitter" class="fontello" href="https://twitter.com/intent/tweet?url=http://###########################&text=我在玩爱打谁打谁，一起来玩吧//" target="_blank"></a>
+			<a id="icon-cc" class="fontello" href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank"></a>
+ 			<a id="icon-weibo" class="fontello" href="http://v.t.sina.com.cn/share/share.php?url=http://###########################=我在玩爱打谁打谁，一起来玩吧//" target="_blank"></a>
+	    </div> <!-- end #post__share -->
+
+		<!-- <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+		<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script> -->
+	</body>
+	<script src="table.js"></script>
+</html>

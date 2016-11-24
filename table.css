@@ -1,0 +1,87 @@
+ /*----------------------------*\
+    布局用小红线
+ \*----------------------------*/
+            /*div{
+				border: 1px solid red;
+			}
+			span{
+				border: 1px solid blue;
+			}*/
+			body{
+				background-color: #b4daf0;
+				/*background-image: url(img/body_repeat.png);*/
+				background-image: url(http://img.t.sinajs.cn/t6/skin/skin048/images/body_repeat.png?id=1414052827385);
+				background-repeat: repeat-x;
+    				/*background-repeat-x: repeat;
+    				background-repeat-y: no-repeat;*/
+    			background-position: center 0;
+    				/*background-position-x: center;
+    				background-position-y: 0px;*/
+			}
+			body{
+				font:12px/1.3 'Arial','Microsoft YaHei';
+    			/*font-style: normal;
+    			font-variant-ligatures: normal;
+    			font-variant-caps: normal;
+    			font-variant-numeric: normal;
+    			font-weight: normal;
+    			font-stretch: normal;
+    			font-size: 12px;
+    			line-height: 1.3;
+    			font-family: Arial, "Microsoft YaHei"; */
+			}
+			.icon_setskin{
+				right: 0;
+				top:0;
+				position: absolute;
+				width: 42px;
+				height: 44px;
+				background-position: -150px -200px;
+				    /*background-position-x: -150px;
+    				background-position-y: -200px;*/
+			}
+			.icon{
+				display: inline-block;
+				background-image: url(http://img.t.sinajs.cn/t6/style/images/common/icon.gif?id=201611021606);
+				background-repeat: no-repeat;
+			}
+			/* 傻货看ID名啊 */
+            #mainFrame{
+            	background-color: rgba(70,149,194,0.3);
+       			width: 952px;height: 724px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			#top{
+				height: 60px;
+			}
+			#left{
+				float: left;
+				width: 660px;height: 664px;
+			}
+			#right{
+				float: right;
+				width: 285px;height: 664px;
+			}
+			/* 主游戏区域的样式 */
+			#mainGameArea{
+				width:550px;height: 550px;
+				background-color: #eb7350;
+				/*background-color:#00ff33;green*/ 
+				/*margin-top: 10px;*/
+				margin-left: auto;
+				margin-right: auto;
+			}
+			/* 从上到下四层的样式 */
+			#mainGameArea>div{
+				width: 550px;height: 135px
+			}
+			/* 16个方格区域的样式 */
+			.tr>div{
+				float: left;
+				width: 135px;height: 135px;
+			}
+			
+			#mainGameArea:hover {
+				cursor: url('img/chuizi.png'),auto;
+			}
